@@ -1,18 +1,16 @@
 package com.example.villagers_empowered.villager;
 
+import com.example.villagers_empowered.block.ModBlocks;
 import com.example.villagers_empowered.villagers_empowered;
 import com.google.common.collect.ImmutableSet;
-import com.example.villagers_empowered.block.ModBlocks;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.util.ObfuscationReflectionHelper;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.lang.reflect.InvocationTargetException;
 
 public class ModVillagers {
     public static final DeferredRegister<PoiType> POI_TYPES =
@@ -52,22 +50,6 @@ public class ModVillagers {
             () -> new VillagerProfession("packed_librarian", x -> x.get() == PACKED_LIBRARIAN_POI.get(),
                     x -> x.get() == PACKED_LIBRARIAN_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_ARMORER));
-
-
-    public static void registerPOIs() {
-        try {
-            ObfuscationReflectionHelper.findMethod(PoiType.class,
-                    "registerBlockStates", PoiType.class).invoke(null, FLASONIC_POI.get());
-            ObfuscationReflectionHelper.findMethod(PoiType.class,
-                    "registerBlockStates", PoiType.class).invoke(null, LIFARMIAN_POI.get());
-            ObfuscationReflectionHelper.findMethod(PoiType.class,
-                    "registerBlockStates", PoiType.class).invoke(null, CREATURE_CARRIER_POI.get());
-            ObfuscationReflectionHelper.findMethod(PoiType.class,
-                    "registerBlockStates", PoiType.class).invoke(null, PACKED_LIBRARIAN_POI.get());
-        } catch (InvocationTargetException | IllegalAccessException exception) {
-            exception.printStackTrace();
-        }
-    }
 
     public static void register(IEventBus eventBus) {
         POI_TYPES.register(eventBus);

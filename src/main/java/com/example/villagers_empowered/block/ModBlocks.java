@@ -19,16 +19,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, villagers_empowered.MOD_ID);
 
     public static final RegistryObject<Block> LIFARMIAN_TABLE = registerBlock("lifarmian_table",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(2.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> FLASONIC_TABLE = registerBlock("flasonic_table",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(2.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CREATURE_CARRIER_BLOCK = registerBlock("creature_carrier_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .strength(3.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PACKED_BOOKSHELF = registerBlock("packed_bookshelf",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

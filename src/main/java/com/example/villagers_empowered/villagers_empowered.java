@@ -1,9 +1,9 @@
 package com.example.villagers_empowered;
 
+import com.example.villagers_empowered.block.ModBlocks;
 import com.example.villagers_empowered.item.ModItems;
 import com.example.villagers_empowered.villager.ModVillagers;
 import com.mojang.logging.LogUtils;
-import com.example.villagers_empowered.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -38,7 +38,6 @@ public class villagers_empowered {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            ModVillagers.registerPOIs();
         });
     }
 
