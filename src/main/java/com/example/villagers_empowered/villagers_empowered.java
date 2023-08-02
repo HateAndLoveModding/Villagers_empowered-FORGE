@@ -15,13 +15,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(villagers_empowered.MOD_ID)
 public class villagers_empowered {
     public static final String MOD_ID = "villagers_empowered";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    // Very Important Comment
     public villagers_empowered() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -44,6 +42,7 @@ public class villagers_empowered {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.BASE_SPAWN_EGG);
+            event.accept(ModItems.CHARGED_CREEPER_SPAWN_EGG);
         }
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.CREATURE_CARRIER_BLOCK);
@@ -53,7 +52,6 @@ public class villagers_empowered {
         }
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
         @SubscribeEvent

@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> BASE_SPAWN_EGG = ITEMS.register("base_spawn_egg",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHARGED_CREEPER_SPAWN_EGG = ITEMS.register("charged_creeper_spawn_egg",
+            () -> new ChargedCreeperSpawnEgg(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
