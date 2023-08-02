@@ -116,26 +116,26 @@ public class ModEvents {
 
         if(event.getType() == ModVillagers.CREATURE_CARRIER.get()) {
             event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.COW_SPAWN_EGG, 1), 5, 2, 0.02f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SHEEP_SPAWN_EGG, 1), 5, 2, 0.02f));}
+            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SHEEP_SPAWN_EGG, 1), 5, 2, 0.02f));
             event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.PIG_SPAWN_EGG, 1), 5, 2, 0.02f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.CHICKEN_SPAWN_EGG, 1), 5, 2, 0.02f));
+            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.CHICKEN_SPAWN_EGG, 1), 5, 2, 0.02f));}
         if(event.getType() == ModVillagers.CREATURE_CARRIER.get()) {
             event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.CREEPER_SPAWN_EGG, 1), 5, 6, 0.06f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SPIDER_SPAWN_EGG, 1), 5, 6, 0.06f));}
+            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SPIDER_SPAWN_EGG, 1), 5, 6, 0.06f));
             event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.ZOMBIE_SPAWN_EGG, 1), 5, 6, 0.06f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SKELETON_SPAWN_EGG, 1), 5, 6, 0.06f));
+            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SKELETON_SPAWN_EGG, 1), 5, 6, 0.06f));}
         if(event.getType() == ModVillagers.CREATURE_CARRIER.get()) {
             event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.HORSE_SPAWN_EGG, 1), 5, 8, 0.08f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.AXOLOTL_SPAWN_EGG, 1), 5, 8, 0.08f));}
+            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.AXOLOTL_SPAWN_EGG, 1), 5, 8, 0.08f));
             event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.FROG_SPAWN_EGG, 1), 5, 8, 0.08f));
             event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.MOOSHROOM_SPAWN_EGG, 1), 5, 8, 0.08f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.PANDA_SPAWN_EGG, 1), 5, 8, 0.08f));
+            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.PANDA_SPAWN_EGG, 1), 5, 8, 0.08f));}
         if(event.getType() == ModVillagers.CREATURE_CARRIER.get()) {
             event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(ModItems.CHARGED_CREEPER_SPAWN_EGG.get(), 1), 5, 10, 0.1f));
-            event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SLIME_SPAWN_EGG, 1), 5, 10, 0.1f));}
+            event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SLIME_SPAWN_EGG, 1), 5, 10, 0.1f));
             event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.BLAZE_SPAWN_EGG, 1), 5, 10, 0.1f));
             event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.SHULKER_SPAWN_EGG, 1), 5, 10, 0.1f));
-            event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.ENDERMITE_SPAWN_EGG, 1), 5, 10, 0.1f));
+            event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.ENDERMITE_SPAWN_EGG, 1), 5, 10, 0.1f));}
         if(event.getType() == ModVillagers.CREATURE_CARRIER.get()) {
             event.getTrades().get(5).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.WITHER_SKELETON_SPAWN_EGG, 1), 5, 15, 0.15f));
             event.getTrades().get(5).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD, 4), new ItemStack(ModItems.BASE_SPAWN_EGG.get(), 1), new ItemStack(Items.VILLAGER_SPAWN_EGG, 1), 5, 15, 0.15f));}
