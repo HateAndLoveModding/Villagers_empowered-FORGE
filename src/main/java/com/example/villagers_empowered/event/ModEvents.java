@@ -22,55 +22,24 @@ public class ModEvents {
             event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLAST_PROTECTION, 4)), 2, 25, 0.25f));
             event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.PROJECTILE_PROTECTION, 4)), 2, 25, 0.25f));
             event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FIRE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MENDING, 1)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.THORNS, 3)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.RESPIRATION, 3)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FALL_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FROST_WALKER, 2)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SHARPNESS, 5)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SWEEPING_EDGE, 3)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MOB_LOOTING, 3)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_EFFICIENCY, 5)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_FORTUNE, 3)), 2, 25, 0.25f));
-            event.getTrades().get(1).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.POWER_ARROWS, 5)), 2, 25, 0.25f));}
-        if(event.getType() == ModVillagers.PACKED_LIBRARIAN.get()) {
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.ALL_DAMAGE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLAST_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.PROJECTILE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FIRE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MENDING, 1)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f));
+
             event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.THORNS, 3)), 2, 25, 0.25f));
             event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.RESPIRATION, 3)), 2, 25, 0.25f));
             event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FALL_PROTECTION, 4)), 2, 25, 0.25f));
             event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FROST_WALKER, 2)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SHARPNESS, 5)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SWEEPING_EDGE, 3)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MOB_LOOTING, 3)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_EFFICIENCY, 5)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_FORTUNE, 3)), 2, 25, 0.25f));
-            event.getTrades().get(2).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.POWER_ARROWS, 5)), 2, 25, 0.25f));}
-        if(event.getType() == ModVillagers.PACKED_LIBRARIAN.get()) {
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.ALL_DAMAGE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLAST_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.PROJECTILE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FIRE_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MENDING, 1)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.THORNS, 3)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.RESPIRATION, 3)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FALL_PROTECTION, 4)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.FROST_WALKER, 2)), 2, 25, 0.25f));
+
+            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.POWER_ARROWS, 5)), 2, 25, 0.25f));
             event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SHARPNESS, 5)), 2, 25, 0.25f));
             event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SWEEPING_EDGE, 3)), 2, 25, 0.25f));
             event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MOB_LOOTING, 3)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_EFFICIENCY, 5)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_FORTUNE, 3)), 2, 25, 0.25f));
-            event.getTrades().get(3).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.POWER_ARROWS, 5)), 2, 25, 0.25f));}
+
+            event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.MENDING, 1)), 2, 25, 0.25f));
+            event.getTrades().get(4).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.UNBREAKING, 3)), 2, 25, 0.25f));
+
+            event.getTrades().get(5).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_EFFICIENCY, 5)), 2, 25, 0.25f));
+            event.getTrades().get(5).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.SILK_TOUCH, 1)), 2, 25, 0.25f));
+            event.getTrades().get(5).add((trader, rand) -> new MerchantOffer(new ItemStack(Items.EMERALD_BLOCK, 4), EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.BLOCK_FORTUNE, 3)), 2, 25, 0.25f));
+        }
 
 
 
