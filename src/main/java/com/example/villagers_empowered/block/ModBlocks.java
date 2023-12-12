@@ -19,16 +19,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, villagers_empowered.MOD_ID);
 
     public static final RegistryObject<Block> LIFARMIAN_TABLE = registerBlock("lifarmian_table",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
                     .strength(2.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> FLASONIC_TABLE = registerBlock("flasonic_table",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
                     .strength(2.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CREATURE_CARRIER_BLOCK = registerBlock("creature_carrier_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
                     .strength(3.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> PACKED_BOOKSHELF = registerBlock("packed_bookshelf",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
                     .strength(4f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -37,8 +37,8 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

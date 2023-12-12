@@ -25,7 +25,6 @@ public class villagers_empowered {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -51,7 +50,6 @@ public class villagers_empowered {
             event.accept(ModBlocks.FLASONIC_TABLE);
         }
     }
-
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
         @SubscribeEvent
