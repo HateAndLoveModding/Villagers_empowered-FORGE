@@ -1,7 +1,6 @@
-package com.example.villagers_empowered.item;
+package com.example.villagers_empowered.Main;
 
 import com.example.villagers_empowered.villagers_empowered;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,9 +12,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, villagers_empowered.MOD_ID);
 
     public static final RegistryObject<Item> BASE_SPAWN_EGG = ITEMS.register("base_spawn_egg",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHARGED_CREEPER_SPAWN_EGG = ITEMS.register("charged_creeper_spawn_egg",
-            () -> new ChargedCreeperSpawnEgg(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new ChargedCreeperSpawnEgg(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

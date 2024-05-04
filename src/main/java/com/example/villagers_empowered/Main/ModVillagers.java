@@ -1,6 +1,5 @@
-package com.example.villagers_empowered.villager;
+package com.example.villagers_empowered.Main;
 
-import com.example.villagers_empowered.block.ModBlocks;
 import com.example.villagers_empowered.villagers_empowered;
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.sounds.SoundEvents;

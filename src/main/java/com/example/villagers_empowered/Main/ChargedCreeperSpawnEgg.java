@@ -1,4 +1,4 @@
-package com.example.villagers_empowered.item;
+package com.example.villagers_empowered.Main;
 
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
